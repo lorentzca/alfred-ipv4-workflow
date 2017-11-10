@@ -14,6 +14,7 @@ type Items struct {
 
 type Item struct {
 	Title string `json:"title"`
+	Arg   string `json:"arg"`
 }
 
 func main() {
@@ -26,7 +27,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	item := Item{Title: ipv4Net.String()}
+	item := Item{Title: ipv4Net.String(), Arg: ipv4Net.String()}
 	items := Items{Items: []Item{item}}
 
 	jsonBytes, err := json.Marshal(items)
