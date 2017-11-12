@@ -10,7 +10,7 @@ Download and double-click.
 
 ## Usage
 
-Get IPv4 Network Address.
+Get IPv4 Network Address from CIDR.
 
 ```
 ipv4 <CIDR>
